@@ -14,8 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: pj100-team/github_actions_tutrial@main
+      - name: Add new issue to column
+        uses: konradpabjan/actions-add-new-issue-to-column@v1.1
         with:
-          project: Sample
-          column: TODO
+          action-token: "${{ 4ddd73ddcef3627ce9dffc2a87211007649ac839 }}"
+          project-url: "https://github.com/pj100-team/github_actions_tutrial/projects/1"
+          column-name: "TODO"
+
