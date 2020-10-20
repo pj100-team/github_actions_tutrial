@@ -2,7 +2,7 @@ name: Super-Linter
 
 on:
   issues:
-    types: opened
+    types: [opened]
 
 jobs:
   # Set the job key. The key is displayed as the job name
