@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: pj100-team/github_actions_tutrial
+        uses: pj100-team/github_actions_tutrial@master
         with:
           project: Sample
           column: TODO
