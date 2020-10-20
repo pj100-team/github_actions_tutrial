@@ -28,4 +28,4 @@ jobs:
         with:
           source_column_id: TODO
           target_column_id: DONE
-          github_token: ${{ secrets.1b05d6d3c610b8a191fbc8fbc284c5c9f75704b4 }}
+          github_token: ${{ 1b05d6d3c610b8a191fbc8fbc284c5c9f75704b4 }}
