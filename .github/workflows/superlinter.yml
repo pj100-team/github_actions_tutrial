@@ -27,5 +27,5 @@ jobs:
         uses: jonabc/linked-project-columns@v1
         with:
           source_column_id: TODO
-          target_column_id: https://github.com/pj100-team/github_actions_tutrial/projects/1#column-11258993
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target_column_id: DONE
+          github_token: ${{ secrets.1b05d6d3c610b8a191fbc8fbc284c5c9f75704b4 }}
