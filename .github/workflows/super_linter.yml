@@ -1,0 +1,21 @@
+name: Super-Linter
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  issue_todo:
+    # Name the Job
+    name: move to TODO
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: pj100-team/github_actions_tutrial
+        with:
+          project: Sample
+          column: TODO
