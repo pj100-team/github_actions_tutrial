@@ -17,6 +17,7 @@ jobs:
       - name: Add new issue to column
         uses: konradpabjan/actions-add-new-issue-to-column@v1.1
         with:
+          action-token: "${{ secrets.GITHUB_TOKEN }}"
           project-url: "https://github.com/pj100-team/github_actions_tutrial/projects/1"
           column-name: "TODO"
 
