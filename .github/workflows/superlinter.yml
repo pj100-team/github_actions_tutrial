@@ -8,9 +8,9 @@ on:
 jobs:
   # Set the job key. The key is displayed as the job name
   # when a job name is not provided
-  super-lint:
+  issue_todo:
     # Name the Job
-    name: Lint code base
+    name: move to TODO
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
