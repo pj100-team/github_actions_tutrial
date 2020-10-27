@@ -26,6 +26,6 @@ jobs:
         if: ${{ github.event_name == 'issues' && github.event.action == 'closed' }}$
         uses: wktk/github-project-connect-action@v1
         with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           project-id: 11258992
           column-id: 11258993
-          github_token: ${{ secrets.ACCESS_TOKEN }}
