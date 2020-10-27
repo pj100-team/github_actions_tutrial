@@ -26,6 +26,6 @@ jobs:
         if: ${{ github.event_name == 'issues' && github.event.action == 'closed' }}$
         uses: jonabc/linked-project-columns@v1
         with:
-          source_column_id: 11258992
-          target_column_id: 11258993
+          source_column_id: TODO
+          target_column_id: DONE
           github_token: ${{ secrets.ACCESS_TOKEN }}
