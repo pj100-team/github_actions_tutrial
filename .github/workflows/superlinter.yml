@@ -24,7 +24,8 @@ jobs:
       
       - name: Move an issue to column
         if: ${{ github.event_name == 'issues' && github.event.action == 'closed' }}$
-        uses: wktk/github-project-connect-action@v1
+        uses: jonabc/linked-project-columns@v1
         with:
+          source_column_id: <column node id>
+          target_column_id: <column node id>
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          column-url: https://github.com/pj100-team/github_actions_tutrial/projects/1#column-11258993
