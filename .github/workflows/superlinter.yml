@@ -27,5 +27,4 @@ jobs:
         uses: wktk/github-project-connect-action@v1
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
-          project-id: 11258992
-          column-id: 11258993
+          column-url: https://github.com/pj100-team/github_actions_tutrial/projects/1#column-11258993
