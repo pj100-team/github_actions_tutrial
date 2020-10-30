@@ -1,0 +1,22 @@
+name: MoveColumn
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  # Set the job key. The key is displayed as the job name
+  # when a job name is not provided
+  issue_todo:
+    # Name the Job
+    name: MoveColumn
+    # Set the type of machine to run on
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Move an issue to column
+        uses: alex-page/github-project-automation-plus@v0.3.0
+        with:
+          project: Sample
+          column: DONE
+          repo-token: ${{ secrets.ACCESS_TOKEN }}
