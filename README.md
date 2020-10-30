@@ -3,8 +3,8 @@
 
 ## Practice 1
 
-issueがopenされたらProjectのTODOカラムに追加する
+- [x] issueがopenされたらProjectのTODOカラムに追加する
 
 ## Practice 2
 
-issueがcloseされたらProjectのTODOカラムからDONEカラムに移動させる
+- [x] issueがcloseされたらProjectのTODOカラムからDONEカラムに移動させる
