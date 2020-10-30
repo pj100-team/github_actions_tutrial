@@ -28,4 +28,4 @@ jobs:
         with:
           project: Sample
           column: DONE
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+          repo_token: ${{ secrets.ACCESS_TOKEN }}
