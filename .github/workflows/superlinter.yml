@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Add new issue to column
-        if: ${{ github.event_name == 'issues' && github.event.action == 'opened' }}$
+        if: ${{ github.event_name == 'issues' && github.event.action == 'opened' && github.event.issue.pull_request.url != '' }}$
         uses: konradpabjan/actions-add-new-issue-to-column@v1.1
         with:
           action-token: "${{ secrets.GITHUB_TOKEN }}"
@@ -24,8 +24,8 @@ jobs:
       
       - name: Move an issue to column
         if: ${{ github.event_name == 'issues' && github.event.action == 'closed' }}$
-        uses: jonabc/linked-project-columns@v1
+        uses: alex-page/github-project-automation-plus@v0.3.0
         with:
-          source_column_id: MDEzOlByb2plY3RDb2x1bW4xMTI1ODk5Mg
-          target_column_id: MDEzOlByb2plY3RDb2x1bW4xMTI1ODk5Mw
+          project: Sample
+          column: DONE
           github_token: ${{ secrets.ACCESS_TOKEN }}
