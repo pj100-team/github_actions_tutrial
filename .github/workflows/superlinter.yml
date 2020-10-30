@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Add new issue to column
-        if: ${{ github.event_name == 'issues' && github.event.action == 'opened' && github.event.issue.pull_request.url != '' }}$
+        if: ${{ github.event_name == 'issues' && github.event.action == 'opened' }}$
         uses: konradpabjan/actions-add-new-issue-to-column@v1.1
         with:
           action-token: "${{ secrets.GITHUB_TOKEN }}"
@@ -23,7 +23,7 @@ jobs:
           column-name: "TODO"
       
       - name: Move an issue to column
-        if: ${{ github.event_name == 'issues' && github.event.action == 'closed' }}$
+        if: ${{ github.event_name == 'issues' && github.event.action == 'closed' && github.event.issue.pull_request.url != '' }}$
         uses: alex-page/github-project-automation-plus@v0.3.0
         with:
           project: Sample
