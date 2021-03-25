@@ -1,5 +1,6 @@
 # Github Actions tutrial
 
+このレポジトリは　github action の基本的な使い方を学ぶためのレポジトリです。
 
 ## Practice 1
 
